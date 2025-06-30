@@ -72,9 +72,7 @@ class UnityConnection:
                 raise ConnectionError(f"Connection verification failed: {str(e)}")
         
         # Normal command handling
-        # Unity側のCommand.csはparametersをJSON文字列として期待しているため、ここで明示的にJSON文字列化する
-        parameters_json = json.dumps(params or {}, ensure_ascii=False)
-        command = {"type": command_type, "parameters": parameters_json}
+        command = {"type": command_type, "parameters": params or {}}
         try:
             command_json = json.dumps(command, ensure_ascii=False)
             logger.info(f"Sending command: {command_type}")
