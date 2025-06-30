@@ -33,7 +33,7 @@ Unity MCPは、AIアシスタント（Claude Desktop、Cursor等）からUnity�
 2. + ボタンをクリックし、Add package from git URL... を選択
 3. 以下のURLを入力：
 ```
-https://github.com/no-setting/unity-mcp-private.git?path=/UnityMcpBridge
+https://github.com/no-setting/unity-mcp.git?path=/UnityMcpBridge
 ```
 4. Add をクリック
 
