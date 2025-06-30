@@ -1,0 +1,25 @@
+{
+    "name": "com.no-settings.unity-mcp",
+    "version": "2.0.0",
+    "displayName": "Unity MCP Bridge",
+    "description": "A bridge that manages and communicates with the sister application, Unity MCP Server, which allows for communications with MCP Clients like Claude Desktop or Cursor.",
+    "unity": "2020.3",
+    "unityRelease": "0f1",
+    "documentationUrl": "https://github.com/no-setting/unity-mcp",
+    "changelogUrl": "https://github.com/no-setting/unity-mcp/blob/main/CHANGELOG.md",
+    "licensesUrl": "https://github.com/no-setting/unity-mcp/blob/main/LICENSE",
+    "dependencies": {
+      "com.unity.nuget.newtonsoft-json": "3.0.2"
+    },
+    "keywords": [
+      "mcp",
+      "ai",
+      "claude",
+      "cursor",
+      "editor"
+    ],
+    "author": {
+      "name": "no-settings",
+      "url": "https://github.com/no-setting"
+    }
+  }
