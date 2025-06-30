@@ -72,7 +72,7 @@ class UnityConnection:
                 raise ConnectionError(f"Connection verification failed: {str(e)}")
         
         # Normal command handling
-        command = {"type": command_type, "parameters": params or {}}
+        command = {"type": command_type, "@params": params or {}}
         try:
             command_json = json.dumps(command, ensure_ascii=False)
             logger.info(f"Sending command: {command_type}")
