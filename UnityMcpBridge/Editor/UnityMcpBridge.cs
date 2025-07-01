@@ -221,10 +221,11 @@ namespace UnityMcpBridge.Editor
                         // フィールド名を変換: "params" -> "parameters"
                         commandText = System.Text.RegularExpressions.Regex.Replace(
                             commandText,
-                            "\\\"params\\\"[ ]*:",
+                            "\\\"@params\\\"[ ]*:",
                             "\"parameters\":",
                             System.Text.RegularExpressions.RegexOptions.IgnoreCase
                         );
+                        Debug.Log($"[ProcessCommands] After replacement: {commandText}");
                         Command command = JsonHelper.FromJson<Command>(commandText);
                         Debug.Log($"[ProcessCommands] Received command type: {command?.type ?? "null"}");
                         Debug.Log($"[ProcessCommands] Command text: {commandText}");
